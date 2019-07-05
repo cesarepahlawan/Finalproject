@@ -1,0 +1,86 @@
+
+*{
+		box-sizing: border-box;
+	}
+	.cols{
+		float: left; /* semacam perataan */
+		width: 100%; /* lebar */
+		padding: 10px; /* jarak */
+		height: 545px; /* tinggi */
+  }
+	.rows{
+		float: left;
+		width: 100%;
+		padding:10px;
+		height: 50px;
+	}
+	.rowsi{
+		float: left;
+		width: 100%;
+		padding:10px;
+		height:90px;
+  }
+  .ukiri{
+    float:right; 
+    font-family: times new roman; /* font yang di gunakan pada class ukiri */
+    position:absolute; /* absolute semacam posisi yang bisa keluar dari kerangkanya,misalnya div 50px; 
+    an suatu objek di dalam div ukurannya lebih besar maka objek itu akan offside dari div */
+    top: -3px; /* positioning dari absolute */
+    right: 20px;
+  }
+	@media screen and (max-width: 500px){ /* semacam pengaturan tampilan,
+    maxwidth maksimum lebar dari layout */
+		.cols{
+			width: 100%;
+}
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;/* untuk elemen yang bertumpukan,-1 untuk belakang 1 untuk depan */
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden; /* overflow untuk sisi kiri dan kanan */
+  transition: 0.5s; /* untuk transisi */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center; /*rata tengah */
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px; /*ukuran font*/
+  color: #818181; /* warna */
+  display: block; /* memblock elemen dari suatu elemen */
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus { /* hover untuk overlay membuat suatu elemen berubah saat cursor di arahkan,
+   focus sama seperti hover tetapi berlaku ketika di klik */
+  color: #f1f1f1;                     
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

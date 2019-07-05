@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="layout.css"><!-- Memasukkan "layout.css" ke html ini -->
+<style>
+    a {
+white-space: nowrap;
+text-decoration: none ;/*menghilangkan dekorasi semacam underline*/
+  text-transform: uppercase;/* text berubah jadi kapital*/
+  font-size:40px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  -webkit-text-fill-color:#6bc7f5;/*warna text*/
+  -webkit-text-stroke-width:0,5px;/*ketebalan stroke*/
+}
+a:hover/*mengganti warna di picu oleh cursor*/
+{
+-webkit-text-fill-color:#00FA9A;
+}
+  </style>
+</head>
+<body>
+<div class="rowsi" style="background-color: #515144;"><!-- class rowsi hanya berlaku untuk tag div ini-->
+	<a href="layout.html"> <!-- href "layout.html"sebagai tombol untuk pulang ke home -->
+		<div class="ukiri">
+	<p>Sngls.Zn</p></a> <!-- paragraf sebagai yang di jadikan hyperlink dan di masukkan css -->
+	</div>
+<div id="list" class="overlay">  <!-- id="list",penamaan untuk getdocument di javascript -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><!-- ketika di klik memanggil fungsi closeNav(), &times adalah simbol atau ikon -->
+ <div class="overlay-content">
+    <a href="www.google.com">Product</a>
+</div>
+</div>
+	<span style="position:absolute; top:18px; left:20px;font-size: 45px;cursor:pointer"onclick="openNav()">&#9776;</span>
+	<!-- kalo di klik memanggil fungsi openNav,&#9776; adalah simbol atau semacamnya -->
+</div>
+	<div class="cols"style="background-color: #313537;">
+	<a href="mos.php">
+	<img class="mySlides" src="1.jpg" style="height:10%;position:relative; top: 13px; right: -30px; width: 95%; height: 95%;">
+	</a>
+	<a href="mos.php">
+	<img class="mySlides" src="2.jpg"style="height:10%;position:relative; top: 13px; right: -30px;width: 95%; height: 95%;">
+	</a>
+	<!--Hyper link pada sebuah gambar-->
+</div>
+		<div class="rows" style="background-color: #515144;">
+		</div>
+		<script src="href.js">
+</script>
+</body>
+</html>
+
